@@ -34,6 +34,9 @@
 		EF9F26102977EB8300662FEB /* Operaio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9F260F2977EB8300662FEB /* Operaio.swift */; };
 		EF9F26122978046500662FEB /* NumbersOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9F26112978046500662FEB /* NumbersOnly.swift */; };
 		EF9F2614297813CB00662FEB /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9F2613297813CB00662FEB /* SheetView.swift */; };
+		EF9F26182979563900662FEB /* MezziView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9F26172979563900662FEB /* MezziView.swift */; };
+		EF9F261A29795A8900662FEB /* Mezzi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9F261929795A8900662FEB /* Mezzi.swift */; };
+		EF9F261C29795BA500662FEB /* MezziManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9F261B29795BA500662FEB /* MezziManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,9 @@
 		EF9F260F2977EB8300662FEB /* Operaio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operaio.swift; sourceTree = "<group>"; };
 		EF9F26112978046500662FEB /* NumbersOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersOnly.swift; sourceTree = "<group>"; };
 		EF9F2613297813CB00662FEB /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		EF9F26172979563900662FEB /* MezziView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MezziView.swift; sourceTree = "<group>"; };
+		EF9F261929795A8900662FEB /* Mezzi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mezzi.swift; sourceTree = "<group>"; };
+		EF9F261B29795BA500662FEB /* MezziManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MezziManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,7 @@
 				EF9F25F52974748800662FEB /* Worker.swift */,
 				EF9F25FE29759DF700662FEB /* Location.swift */,
 				EF9F260F2977EB8300662FEB /* Operaio.swift */,
+				EF9F261929795A8900662FEB /* Mezzi.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,6 +167,7 @@
 				EF9F25FC29747D8300662FEB /* DataELuogoView.swift */,
 				EF9F260B297727E300662FEB /* PersonaleView.swift */,
 				EF9F2613297813CB00662FEB /* SheetView.swift */,
+				EF9F26172979563900662FEB /* MezziView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +188,7 @@
 				EF9F26052976B5FD00662FEB /* TestManager.swift */,
 				EF9F26092976B61400662FEB /* DataELuogoManager.swift */,
 				EF9F260D2977E96200662FEB /* PersonaleManager.swift */,
+				EF9F261B29795BA500662FEB /* MezziManager.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -266,14 +275,17 @@
 				EF9F26102977EB8300662FEB /* Operaio.swift in Sources */,
 				EF9F26122978046500662FEB /* NumbersOnly.swift in Sources */,
 				EF9F25E42970625900662FEB /* TestResource.swift in Sources */,
+				EF9F26182979563900662FEB /* MezziView.swift in Sources */,
 				EF9F2614297813CB00662FEB /* SheetView.swift in Sources */,
 				EF9F25FB29747B9E00662FEB /* Constants.swift in Sources */,
 				EF9F26072976B5FD00662FEB /* TestManager.swift in Sources */,
 				EF9F25FD29747D8300662FEB /* DataELuogoView.swift in Sources */,
 				EF9F25DC297060A600662FEB /* APIRequest.swift in Sources */,
 				EF9F25C229705D7F00662FEB /* ContentView.swift in Sources */,
+				EF9F261C29795BA500662FEB /* MezziManager.swift in Sources */,
 				EF9F25DA2970605100662FEB /* KeychainItem.swift in Sources */,
 				EF9F25D029705E3700662FEB /* APIResource.swift in Sources */,
+				EF9F261A29795A8900662FEB /* Mezzi.swift in Sources */,
 				EF9F25F62974748800662FEB /* Worker.swift in Sources */,
 				EF9F25EE29717D8900662FEB /* LoginView.swift in Sources */,
 				EF9F25D229705FAB00662FEB /* NetworkRequest.swift in Sources */,
