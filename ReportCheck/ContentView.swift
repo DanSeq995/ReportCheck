@@ -6,16 +6,27 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
+    @StateObject var networkRequest = NetworkRequest()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Hello!")
+            ScrollView {
+                ForEach(networkRequest.cantieri) { cantiere in
+                    Text(cantiere.nazione)
+                }
+            }
         }
         .padding()
+        .onAppear{
+            Task{
+                try await networkRequest.loadCantieri()
+            }
+        }
     }
 }
 
