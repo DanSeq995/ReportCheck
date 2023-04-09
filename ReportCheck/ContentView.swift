@@ -13,6 +13,9 @@ struct ContentView: View {
         switch viewState {
         case .logIn:
             LogInView(viewState: $viewState)
+            
+        case .cantieri:
+            CantieriView(viewState: $viewState)
         }
     }
 }

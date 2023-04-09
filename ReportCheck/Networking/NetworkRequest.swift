@@ -9,10 +9,10 @@ import Foundation
 import SwiftUI
 
 class NetworkRequest: ObservableObject {
-    @Published var image: Data?
+    @Published var isLog: Bool!
     @Published var cantieri = [Cantiere]()
-        
-    func logIn(username:String, password:String) {
+    
+    func logIn(username:String, password:String) async throws {
         let finalUrl = APIRequest().url.appendingPathComponent("/Users")
         var request = URLRequest(url: finalUrl)
         APIRequest().addHeaderToQuery(request: &request)
@@ -28,22 +28,24 @@ class NetworkRequest: ObservableObject {
                 print(error ?? "Error unknown")
                 return
             }
-            
             do{
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 decoder.dateDecodingStrategy = .secondsSince1970
-                for user in try decoder.decode(RootUsers.self, from: data).data {
+                let users = try decoder.decode(RootUsers.self, from: data).data
+                
+                for user in users {
                     if username == user.username && password == user.password {
-                        print("Logga")
+                        self?.isLog = true
                     } else {
-                        print("Sbagliato")
+                        self?.isLog = false
                     }
                 }
                 return
             }catch {
                 print(error)
             }
+            
         }
         task.resume()
     }
