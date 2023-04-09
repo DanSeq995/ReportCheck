@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Root: Decodable {
+struct RootCantiere: Decodable {
     let data: [Cantiere]
     enum CodingKeys: String, CodingKey{
         case data = "value"

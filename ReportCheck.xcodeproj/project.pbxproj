@@ -14,6 +14,9 @@
 		EFFDFE1B29E05E2F00FEAAD6 /* Cantieri.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDFE1A29E05E2F00FEAAD6 /* Cantieri.swift */; };
 		EFFDFE2129E06CC000FEAAD6 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDFE2029E06CC000FEAAD6 /* APIRequest.swift */; };
 		EFFDFE2329E0769F00FEAAD6 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDFE2229E0769F00FEAAD6 /* NetworkRequest.swift */; };
+		EFFDFE3129E0AC7200FEAAD6 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDFE3029E0AC7200FEAAD6 /* Users.swift */; };
+		EFFDFE3329E0AEF100FEAAD6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDFE3229E0AEF100FEAAD6 /* Constants.swift */; };
+		EFFDFE3629E0AFA200FEAAD6 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDFE3529E0AFA200FEAAD6 /* LogInView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		EFFDFE1A29E05E2F00FEAAD6 /* Cantieri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cantieri.swift; sourceTree = "<group>"; };
 		EFFDFE2029E06CC000FEAAD6 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		EFFDFE2229E0769F00FEAAD6 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		EFFDFE3029E0AC7200FEAAD6 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		EFFDFE3229E0AEF100FEAAD6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EFFDFE3529E0AFA200FEAAD6 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +63,14 @@
 		EF725AAA29E05ADF00574EC6 /* ReportCheck */ = {
 			isa = PBXGroup;
 			children = (
+				EFFDFE3429E0AF9200FEAAD6 /* Views */,
 				EFFDFE1929E05E1900FEAAD6 /* Models */,
 				EFFDFE1629E05D1400FEAAD6 /* Networking */,
 				EF725AAB29E05ADF00574EC6 /* ReportCheckApp.swift */,
 				EF725AAD29E05ADF00574EC6 /* ContentView.swift */,
 				EF725AAF29E05AE000574EC6 /* Assets.xcassets */,
 				EF725AB129E05AE000574EC6 /* Preview Content */,
+				EFFDFE3229E0AEF100FEAAD6 /* Constants.swift */,
 			);
 			path = ReportCheck;
 			sourceTree = "<group>";
@@ -89,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				EFFDFE1A29E05E2F00FEAAD6 /* Cantieri.swift */,
+				EFFDFE3029E0AC7200FEAAD6 /* Users.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -98,6 +107,14 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EFFDFE3429E0AF9200FEAAD6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFFDFE3529E0AFA200FEAAD6 /* LogInView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +191,9 @@
 				EF725AAE29E05ADF00574EC6 /* ContentView.swift in Sources */,
 				EFFDFE2129E06CC000FEAAD6 /* APIRequest.swift in Sources */,
 				EF725AAC29E05ADF00574EC6 /* ReportCheckApp.swift in Sources */,
+				EFFDFE3329E0AEF100FEAAD6 /* Constants.swift in Sources */,
+				EFFDFE3129E0AC7200FEAAD6 /* Users.swift in Sources */,
+				EFFDFE3629E0AFA200FEAAD6 /* LogInView.swift in Sources */,
 				EFFDFE2329E0769F00FEAAD6 /* NetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
