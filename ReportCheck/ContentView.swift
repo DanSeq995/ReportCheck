@@ -30,6 +30,10 @@ struct ContentView: View {
         case .lavorazioni:
             LavorazioniView(viewState: $viewState)
                 .preferredColorScheme(.light)
+            
+        case .note:
+            NoteView(viewState: $viewState)
+                .preferredColorScheme(.light)
         }
     }
 }

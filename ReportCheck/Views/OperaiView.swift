@@ -18,7 +18,6 @@ struct OperaiView: View {
     //Variabili checkBox
     @State var selectedOperaio: Set<Int> = []
     
-    //Variabili alert
     //Variabile alerts
     @State private var showingAlertNoOperai = false
     @State private var showingAlertNoOre = false

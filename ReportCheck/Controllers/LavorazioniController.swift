@@ -9,7 +9,7 @@ import Foundation
 
 extension LavorazioniView{
     
-    func fetchMezzi() {
+    func fetchLavorazioni() {
         let finalUrl = APIRequest().url.appendingPathComponent("/Lavorazioni")
         print(finalUrl)
         var request = URLRequest(url: finalUrl)

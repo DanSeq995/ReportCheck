@@ -21,6 +21,7 @@
 		EF9E1A6C29E4BFDC00C597B9 /* LavorazioniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E1A6B29E4BFDC00C597B9 /* LavorazioniView.swift */; };
 		EF9E1A6E29E4C35C00C597B9 /* LavorazioniController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E1A6D29E4C35C00C597B9 /* LavorazioniController.swift */; };
 		EF9E1A7029E4C36700C597B9 /* Lavorazioni.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E1A6F29E4C36700C597B9 /* Lavorazioni.swift */; };
+		EF9E1A7229E4CA2C00C597B9 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E1A7129E4CA2C00C597B9 /* NoteView.swift */; };
 		EFAEDEC529E31FB50012DE60 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC429E31FB50012DE60 /* Logo.swift */; };
 		EFAEDEC729E337CE0012DE60 /* CantieriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC629E337CE0012DE60 /* CantieriView.swift */; };
 		EFAEDECA29E440610012DE60 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC929E440610012DE60 /* LogInController.swift */; };
@@ -49,6 +50,7 @@
 		EF9E1A6B29E4BFDC00C597B9 /* LavorazioniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LavorazioniView.swift; sourceTree = "<group>"; };
 		EF9E1A6D29E4C35C00C597B9 /* LavorazioniController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LavorazioniController.swift; sourceTree = "<group>"; };
 		EF9E1A6F29E4C36700C597B9 /* Lavorazioni.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lavorazioni.swift; sourceTree = "<group>"; };
+		EF9E1A7129E4CA2C00C597B9 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		EFAEDEC429E31FB50012DE60 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		EFAEDEC629E337CE0012DE60 /* CantieriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CantieriView.swift; sourceTree = "<group>"; };
 		EFAEDEC929E440610012DE60 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				EF43C4C729E470C1008CC94E /* OperaiView.swift */,
 				EF43C4D129E4BA0F008CC94E /* MezziView.swift */,
 				EF9E1A6B29E4BFDC00C597B9 /* LavorazioniView.swift */,
+				EF9E1A7129E4CA2C00C597B9 /* NoteView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				EFFDFE3129E0AC7200FEAAD6 /* Users.swift in Sources */,
 				EF43C4D229E4BA0F008CC94E /* MezziView.swift in Sources */,
 				EFFDFE3629E0AFA200FEAAD6 /* LogInView.swift in Sources */,
+				EF9E1A7229E4CA2C00C597B9 /* NoteView.swift in Sources */,
 				EF9E1A7029E4C36700C597B9 /* Lavorazioni.swift in Sources */,
 				EF43C4D029E4A28A008CC94E /* MultiSelectionCheckBoxView.swift in Sources */,
 				EFAEDECA29E440610012DE60 /* LogInController.swift in Sources */,

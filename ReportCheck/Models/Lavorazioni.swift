@@ -18,13 +18,12 @@ public struct Lavorazioni: Identifiable {
     public var id: Int
     var nome: String
     var tipo: String
-    var quantità: String
+    var quantità: String = ""
 
-    public init(id: Int, nome: String, tipo: String, quantità: String) {
+    public init(id: Int, nome: String, tipo: String) {
         self.id = id
         self.nome = nome
         self.tipo = tipo
-        self.quantità = quantità
     }
 }
 
@@ -33,6 +32,5 @@ extension Lavorazioni: Codable, Hashable {
         case id = "Id"
         case nome = "Nome"
         case tipo = "Tipo"
-        case quantità = "Quantità"
     }
 }

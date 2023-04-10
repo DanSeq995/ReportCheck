@@ -53,7 +53,7 @@ struct MezziView: View {
             HStack{
                 Spacer()
                 Button(action: {
-                    viewState = .cantieri
+                    viewState = .operai
                 }, label: {
                     if viewState != .cantieri {
                         Image(systemName: "chevron.left.circle.fill")
@@ -67,6 +67,7 @@ struct MezziView: View {
                 Button(action: {
                     if mezziSelezionati != [] {
                         postMezzi = mezziSelezionati
+                        viewState = .lavorazioni
                     } else {
                         alertNoMezzi = true
                     }
@@ -85,7 +86,9 @@ struct MezziView: View {
                             postMezzi = mezziSelezionati
                             viewState = .lavorazioni
                         },
-                        secondaryButton: .cancel(Text("No"))
+                        secondaryButton: .cancel(Text("No")) {
+                            alertNoMezzi = false
+                        }
                     )
                 }
                 Spacer()
