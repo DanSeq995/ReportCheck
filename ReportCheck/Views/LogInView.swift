@@ -14,7 +14,6 @@ struct LogInView: View {
     @State var password = ""
     
     var body: some View {
-        let task = Task {try await networkRequest.logIn(username: username,     password:password)}
         VStack{
             //Logo
             Image("Logo")
@@ -59,10 +58,7 @@ struct LogInView: View {
             //LogIn Button
             Button {
                 Task{
-                    if networkRequest.isLog {
-                        task.cancel()
-                        viewState = .cantieri
-                    }
+                    logIn(username:username, password:password)
                 }
             } label: {
                 Text("Log In")

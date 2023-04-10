@@ -13,6 +13,7 @@
 		EF725AB329E05AE000574EC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF725AB229E05AE000574EC6 /* Preview Assets.xcassets */; };
 		EFAEDEC529E31FB50012DE60 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC429E31FB50012DE60 /* Logo.swift */; };
 		EFAEDEC729E337CE0012DE60 /* CantieriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC629E337CE0012DE60 /* CantieriView.swift */; };
+		EFAEDECA29E440610012DE60 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC929E440610012DE60 /* LogInController.swift */; };
 		EFFDFE1B29E05E2F00FEAAD6 /* Cantieri.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDFE1A29E05E2F00FEAAD6 /* Cantieri.swift */; };
 		EFFDFE2129E06CC000FEAAD6 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDFE2029E06CC000FEAAD6 /* APIRequest.swift */; };
 		EFFDFE2329E0769F00FEAAD6 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDFE2229E0769F00FEAAD6 /* NetworkRequest.swift */; };
@@ -29,6 +30,7 @@
 		EF725AB229E05AE000574EC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EFAEDEC429E31FB50012DE60 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		EFAEDEC629E337CE0012DE60 /* CantieriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CantieriView.swift; sourceTree = "<group>"; };
+		EFAEDEC929E440610012DE60 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		EFFDFE1A29E05E2F00FEAAD6 /* Cantieri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cantieri.swift; sourceTree = "<group>"; };
 		EFFDFE2029E06CC000FEAAD6 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		EFFDFE2229E0769F00FEAAD6 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		EF725AAA29E05ADF00574EC6 /* ReportCheck */ = {
 			isa = PBXGroup;
 			children = (
+				EFAEDEC829E440500012DE60 /* Controllers */,
 				EFFDFE3429E0AF9200FEAAD6 /* Views */,
 				EFFDFE1929E05E1900FEAAD6 /* Models */,
 				EFFDFE1629E05D1400FEAAD6 /* Networking */,
@@ -85,6 +88,14 @@
 				EF725AB229E05AE000574EC6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EFAEDEC829E440500012DE60 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFAEDEC929E440610012DE60 /* LogInController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		EFFDFE1629E05D1400FEAAD6 /* Networking */ = {
@@ -194,6 +205,7 @@
 				EFFDFE3329E0AEF100FEAAD6 /* Constants.swift in Sources */,
 				EFFDFE3129E0AC7200FEAAD6 /* Users.swift in Sources */,
 				EFFDFE3629E0AFA200FEAAD6 /* LogInView.swift in Sources */,
+				EFAEDECA29E440610012DE60 /* LogInController.swift in Sources */,
 				EFFDFE2329E0769F00FEAAD6 /* NetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
