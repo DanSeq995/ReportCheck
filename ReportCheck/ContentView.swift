@@ -13,12 +13,19 @@ struct ContentView: View {
         switch viewState {
         case .logIn:
             LogInView(viewState: $viewState)
+                .preferredColorScheme(.light)
             
         case .cantieri:
             CantieriView(viewState: $viewState)
+                .preferredColorScheme(.light)
             
         case .operai:
             OperaiView(viewState: $viewState)
+                .preferredColorScheme(.light)
+            
+        case .mezzi:
+            MezziView(viewState: $viewState)
+                .preferredColorScheme(.light)
         }
     }
 }

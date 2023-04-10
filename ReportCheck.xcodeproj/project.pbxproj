@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		EF43C4C829E470C1008CC94E /* OperaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43C4C729E470C1008CC94E /* OperaiView.swift */; };
+		EF43C4CA29E48590008CC94E /* OperaiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43C4C929E48590008CC94E /* OperaiController.swift */; };
+		EF43C4CC29E485C7008CC94E /* Operai.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43C4CB29E485C7008CC94E /* Operai.swift */; };
+		EF43C4D029E4A28A008CC94E /* MultiSelectionCheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43C4CF29E4A28A008CC94E /* MultiSelectionCheckBoxView.swift */; };
+		EF43C4D229E4BA0F008CC94E /* MezziView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43C4D129E4BA0F008CC94E /* MezziView.swift */; };
+		EF43C4D429E4BB49008CC94E /* Mezzi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43C4D329E4BB49008CC94E /* Mezzi.swift */; };
 		EF725AAC29E05ADF00574EC6 /* ReportCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF725AAB29E05ADF00574EC6 /* ReportCheckApp.swift */; };
 		EF725AAE29E05ADF00574EC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF725AAD29E05ADF00574EC6 /* ContentView.swift */; };
 		EF725AB029E05AE000574EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF725AAF29E05AE000574EC6 /* Assets.xcassets */; };
@@ -26,6 +31,11 @@
 
 /* Begin PBXFileReference section */
 		EF43C4C729E470C1008CC94E /* OperaiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperaiView.swift; sourceTree = "<group>"; };
+		EF43C4C929E48590008CC94E /* OperaiController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperaiController.swift; sourceTree = "<group>"; };
+		EF43C4CB29E485C7008CC94E /* Operai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operai.swift; sourceTree = "<group>"; };
+		EF43C4CF29E4A28A008CC94E /* MultiSelectionCheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionCheckBoxView.swift; sourceTree = "<group>"; };
+		EF43C4D129E4BA0F008CC94E /* MezziView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MezziView.swift; sourceTree = "<group>"; };
+		EF43C4D329E4BB49008CC94E /* Mezzi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mezzi.swift; sourceTree = "<group>"; };
 		EF725AA829E05ADF00574EC6 /* ReportCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReportCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF725AAB29E05ADF00574EC6 /* ReportCheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCheckApp.swift; sourceTree = "<group>"; };
 		EF725AAD29E05ADF00574EC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +109,7 @@
 			children = (
 				EFAEDEC929E440610012DE60 /* LogInController.swift */,
 				EFAEDECB29E444BA0012DE60 /* CantieriController.swift */,
+				EF43C4C929E48590008CC94E /* OperaiController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -107,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				EFFDFE3229E0AEF100FEAAD6 /* Constants.swift */,
+				EF43C4CF29E4A28A008CC94E /* MultiSelectionCheckBoxView.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -126,6 +138,8 @@
 				EFFDFE1A29E05E2F00FEAAD6 /* Cantieri.swift */,
 				EFFDFE3029E0AC7200FEAAD6 /* Users.swift */,
 				EFAEDEC429E31FB50012DE60 /* Logo.swift */,
+				EF43C4CB29E485C7008CC94E /* Operai.swift */,
+				EF43C4D329E4BB49008CC94E /* Mezzi.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -136,6 +150,7 @@
 				EFFDFE3529E0AFA200FEAAD6 /* LogInView.swift */,
 				EFAEDEC629E337CE0012DE60 /* CantieriView.swift */,
 				EF43C4C729E470C1008CC94E /* OperaiView.swift */,
+				EF43C4D129E4BA0F008CC94E /* MezziView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,14 +227,19 @@
 			files = (
 				EF43C4C829E470C1008CC94E /* OperaiView.swift in Sources */,
 				EFFDFE1B29E05E2F00FEAAD6 /* Cantieri.swift in Sources */,
+				EF43C4CC29E485C7008CC94E /* Operai.swift in Sources */,
+				EF43C4D429E4BB49008CC94E /* Mezzi.swift in Sources */,
 				EF725AAE29E05ADF00574EC6 /* ContentView.swift in Sources */,
 				EFFDFE2129E06CC000FEAAD6 /* APIRequest.swift in Sources */,
 				EF725AAC29E05ADF00574EC6 /* ReportCheckApp.swift in Sources */,
 				EFAEDEC529E31FB50012DE60 /* Logo.swift in Sources */,
 				EFAEDEC729E337CE0012DE60 /* CantieriView.swift in Sources */,
+				EF43C4CA29E48590008CC94E /* OperaiController.swift in Sources */,
 				EFFDFE3329E0AEF100FEAAD6 /* Constants.swift in Sources */,
 				EFFDFE3129E0AC7200FEAAD6 /* Users.swift in Sources */,
+				EF43C4D229E4BA0F008CC94E /* MezziView.swift in Sources */,
 				EFFDFE3629E0AFA200FEAAD6 /* LogInView.swift in Sources */,
+				EF43C4D029E4A28A008CC94E /* MultiSelectionCheckBoxView.swift in Sources */,
 				EFAEDECA29E440610012DE60 /* LogInController.swift in Sources */,
 				EFAEDECC29E444BA0012DE60 /* CantieriController.swift in Sources */,
 				EFFDFE2329E0769F00FEAAD6 /* NetworkRequest.swift in Sources */,

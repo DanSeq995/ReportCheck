@@ -20,20 +20,30 @@ struct LogInView: View {
     
     var body: some View {
         VStack{
-            //Logo
-            Image("Logo")
-                .resizable()
-                .frame(width: 175, height: 175)
-            
-            //Testo di logIn
-            Text("Login")
-                .font(Font.system(size: 50))
-                .fontWeight(.semibold)
-                .foregroundColor(Color.accentColor)
-            Text("Inserisci le credenziali")
-                .font(Font.system(size: 25))
-                .fontWeight(.regular)
-            
+            ZStack{
+                Rectangle()
+                    .size(width: 200, height: 100)
+                    .opacity(0.0)
+
+                VStack{
+                    //Logo
+                    Image("Logo")
+                        .resizable()
+                        .frame(width: 175, height: 175)
+                    
+                    //Testo di logIn
+                    Text("Login")
+                        .font(Font.system(size: 50))
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.accentColor)
+                    Text("Inserisci le credenziali")
+                        .font(Font.system(size: 25))
+                        .fontWeight(.regular)
+                }
+            }
+            .onTapGesture {
+                endEditing()
+            }
             //Username form
             HStack {
                 Image(systemName: "person")
@@ -76,6 +86,7 @@ struct LogInView: View {
                             .stroke(Color.white, lineWidth: 2)
                     )
             }
+            
             .background(Color.accentColor)
             .cornerRadius(25)
             .padding(.horizontal)
@@ -84,6 +95,8 @@ struct LogInView: View {
                     alertWrongCredentials = false
                 }
             }
+            .padding(.bottom)
+            Spacer()
             Spacer()
             Spacer()
         }
