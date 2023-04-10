@@ -13,12 +13,14 @@ enum ViewState {
     case cantieri
     case operai
     case mezzi
+    case lavorazioni
 }
 
 //Variabili da mandare a database
 public var postDate: String!
 public var postCantiere: String!
 public var postOperai: [Operai]!
+public var postMezzi: [Mezzi]?
 
 public func endEditing(){
     UIApplication.shared.endEditing()

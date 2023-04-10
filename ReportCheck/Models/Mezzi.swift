@@ -16,24 +16,17 @@ struct RootMezzi: Decodable {
 
 public struct Mezzi: Identifiable {
     public var id: Int
-    var nome: String
-    var cognome: String
-    var cNomeCompleto: String
-    var oreLavorate: String = ""
+    var targa: String
 
-    public init(id: Int, nome: String, cognome: String, cNomeCompleto: String) {
+    public init(id: Int, targa: String) {
         self.id = id
-        self.nome = nome
-        self.cognome = cognome
-        self.cNomeCompleto = cNomeCompleto
+        self.targa = targa
     }
 }
 
 extension Mezzi: Codable, Hashable {
     enum CodingKeys: String, CodingKey {
         case id = "Id"
-        case nome = "Nome"
-        case cognome = "Cognome"
-        case cNomeCompleto = "cNomecompleto"
+        case targa = "Targa"
     }
 }

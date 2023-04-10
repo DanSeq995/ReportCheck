@@ -26,6 +26,10 @@ struct ContentView: View {
         case .mezzi:
             MezziView(viewState: $viewState)
                 .preferredColorScheme(.light)
+            
+        case .lavorazioni:
+            LavorazioniView(viewState: $viewState)
+                .preferredColorScheme(.light)
         }
     }
 }

@@ -13,10 +13,14 @@
 		EF43C4D029E4A28A008CC94E /* MultiSelectionCheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43C4CF29E4A28A008CC94E /* MultiSelectionCheckBoxView.swift */; };
 		EF43C4D229E4BA0F008CC94E /* MezziView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43C4D129E4BA0F008CC94E /* MezziView.swift */; };
 		EF43C4D429E4BB49008CC94E /* Mezzi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43C4D329E4BB49008CC94E /* Mezzi.swift */; };
+		EF43C4D629E4BC1E008CC94E /* Mezzi Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43C4D529E4BC1E008CC94E /* Mezzi Controller.swift */; };
 		EF725AAC29E05ADF00574EC6 /* ReportCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF725AAB29E05ADF00574EC6 /* ReportCheckApp.swift */; };
 		EF725AAE29E05ADF00574EC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF725AAD29E05ADF00574EC6 /* ContentView.swift */; };
 		EF725AB029E05AE000574EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF725AAF29E05AE000574EC6 /* Assets.xcassets */; };
 		EF725AB329E05AE000574EC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF725AB229E05AE000574EC6 /* Preview Assets.xcassets */; };
+		EF9E1A6C29E4BFDC00C597B9 /* LavorazioniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E1A6B29E4BFDC00C597B9 /* LavorazioniView.swift */; };
+		EF9E1A6E29E4C35C00C597B9 /* LavorazioniController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E1A6D29E4C35C00C597B9 /* LavorazioniController.swift */; };
+		EF9E1A7029E4C36700C597B9 /* Lavorazioni.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E1A6F29E4C36700C597B9 /* Lavorazioni.swift */; };
 		EFAEDEC529E31FB50012DE60 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC429E31FB50012DE60 /* Logo.swift */; };
 		EFAEDEC729E337CE0012DE60 /* CantieriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC629E337CE0012DE60 /* CantieriView.swift */; };
 		EFAEDECA29E440610012DE60 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC929E440610012DE60 /* LogInController.swift */; };
@@ -36,11 +40,15 @@
 		EF43C4CF29E4A28A008CC94E /* MultiSelectionCheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionCheckBoxView.swift; sourceTree = "<group>"; };
 		EF43C4D129E4BA0F008CC94E /* MezziView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MezziView.swift; sourceTree = "<group>"; };
 		EF43C4D329E4BB49008CC94E /* Mezzi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mezzi.swift; sourceTree = "<group>"; };
+		EF43C4D529E4BC1E008CC94E /* Mezzi Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mezzi Controller.swift"; sourceTree = "<group>"; };
 		EF725AA829E05ADF00574EC6 /* ReportCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReportCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF725AAB29E05ADF00574EC6 /* ReportCheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCheckApp.swift; sourceTree = "<group>"; };
 		EF725AAD29E05ADF00574EC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF725AAF29E05AE000574EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF725AB229E05AE000574EC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF9E1A6B29E4BFDC00C597B9 /* LavorazioniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LavorazioniView.swift; sourceTree = "<group>"; };
+		EF9E1A6D29E4C35C00C597B9 /* LavorazioniController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LavorazioniController.swift; sourceTree = "<group>"; };
+		EF9E1A6F29E4C36700C597B9 /* Lavorazioni.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lavorazioni.swift; sourceTree = "<group>"; };
 		EFAEDEC429E31FB50012DE60 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		EFAEDEC629E337CE0012DE60 /* CantieriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CantieriView.swift; sourceTree = "<group>"; };
 		EFAEDEC929E440610012DE60 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
@@ -110,6 +118,8 @@
 				EFAEDEC929E440610012DE60 /* LogInController.swift */,
 				EFAEDECB29E444BA0012DE60 /* CantieriController.swift */,
 				EF43C4C929E48590008CC94E /* OperaiController.swift */,
+				EF43C4D529E4BC1E008CC94E /* Mezzi Controller.swift */,
+				EF9E1A6D29E4C35C00C597B9 /* LavorazioniController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -140,6 +150,7 @@
 				EFAEDEC429E31FB50012DE60 /* Logo.swift */,
 				EF43C4CB29E485C7008CC94E /* Operai.swift */,
 				EF43C4D329E4BB49008CC94E /* Mezzi.swift */,
+				EF9E1A6F29E4C36700C597B9 /* Lavorazioni.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +162,7 @@
 				EFAEDEC629E337CE0012DE60 /* CantieriView.swift */,
 				EF43C4C729E470C1008CC94E /* OperaiView.swift */,
 				EF43C4D129E4BA0F008CC94E /* MezziView.swift */,
+				EF9E1A6B29E4BFDC00C597B9 /* LavorazioniView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,10 +238,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF43C4C829E470C1008CC94E /* OperaiView.swift in Sources */,
+				EF9E1A6C29E4BFDC00C597B9 /* LavorazioniView.swift in Sources */,
 				EFFDFE1B29E05E2F00FEAAD6 /* Cantieri.swift in Sources */,
 				EF43C4CC29E485C7008CC94E /* Operai.swift in Sources */,
 				EF43C4D429E4BB49008CC94E /* Mezzi.swift in Sources */,
 				EF725AAE29E05ADF00574EC6 /* ContentView.swift in Sources */,
+				EF9E1A6E29E4C35C00C597B9 /* LavorazioniController.swift in Sources */,
 				EFFDFE2129E06CC000FEAAD6 /* APIRequest.swift in Sources */,
 				EF725AAC29E05ADF00574EC6 /* ReportCheckApp.swift in Sources */,
 				EFAEDEC529E31FB50012DE60 /* Logo.swift in Sources */,
@@ -239,8 +253,10 @@
 				EFFDFE3129E0AC7200FEAAD6 /* Users.swift in Sources */,
 				EF43C4D229E4BA0F008CC94E /* MezziView.swift in Sources */,
 				EFFDFE3629E0AFA200FEAAD6 /* LogInView.swift in Sources */,
+				EF9E1A7029E4C36700C597B9 /* Lavorazioni.swift in Sources */,
 				EF43C4D029E4A28A008CC94E /* MultiSelectionCheckBoxView.swift in Sources */,
 				EFAEDECA29E440610012DE60 /* LogInController.swift in Sources */,
+				EF43C4D629E4BC1E008CC94E /* Mezzi Controller.swift in Sources */,
 				EFAEDECC29E444BA0012DE60 /* CantieriController.swift in Sources */,
 				EFFDFE2329E0769F00FEAAD6 /* NetworkRequest.swift in Sources */,
 			);
