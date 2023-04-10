@@ -23,6 +23,7 @@ public var postCantiere: String!
 public var postOperai: [Operai]!
 public var postMezzi: [Mezzi]?
 public var postLavorazioni: [Lavorazioni]?
+public var postNote: String?
 
 public func endEditing(){
     UIApplication.shared.endEditing()

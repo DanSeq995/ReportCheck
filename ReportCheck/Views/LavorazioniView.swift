@@ -19,7 +19,6 @@ struct LavorazioniView: View {
     //Variabile alerts
     @State private var showingAlertNoLavorazioni = false
     @State private var showingAlertNoQuantità = false
-    @State private var showingAlertNoAAA = false
     
     var body: some View {
         VStack{
@@ -116,19 +115,10 @@ struct LavorazioniView: View {
                 Spacer()
                 
                 Button(action: {
-                    print(lavorazioniSelezionate)
                     if lavorazioniSelezionate != [] {
-                        for l in lavorazioniSelezionate{
-                            if l.quantità != "" {
-                                postLavorazioni = lavorazioniSelezionate
-                                print(lavorazioniSelezionate)
-                                viewState = .note
-                            } else {
-                                showingAlertNoQuantità = true
-                            }
-                        }
+                        postLavorazioni = lavorazioniSelezionate
+                        viewState = .note
                     } else {
-                        print("OOOOO")
                         showingAlertNoLavorazioni = true
                     }
                 }, label: {
