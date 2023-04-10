@@ -16,6 +16,9 @@ struct ContentView: View {
             
         case .cantieri:
             CantieriView(viewState: $viewState)
+            
+        case .operai:
+            OperaiView(viewState: $viewState)
         }
     }
 }

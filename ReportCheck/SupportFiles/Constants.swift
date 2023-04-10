@@ -7,9 +7,14 @@
 
 import Foundation
 
+//Enum per gestire la navigazione
 enum ViewState {
     case logIn
     case cantieri
-//    case operai
+    case operai
 }
+
+//Variabili da mandare a database
+public var postDate: String!
+public var postCantiere: String!
 

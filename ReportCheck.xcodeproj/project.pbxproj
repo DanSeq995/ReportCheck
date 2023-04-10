@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF43C4C829E470C1008CC94E /* OperaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF43C4C729E470C1008CC94E /* OperaiView.swift */; };
 		EF725AAC29E05ADF00574EC6 /* ReportCheckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF725AAB29E05ADF00574EC6 /* ReportCheckApp.swift */; };
 		EF725AAE29E05ADF00574EC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF725AAD29E05ADF00574EC6 /* ContentView.swift */; };
 		EF725AB029E05AE000574EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF725AAF29E05AE000574EC6 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		EFAEDEC529E31FB50012DE60 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC429E31FB50012DE60 /* Logo.swift */; };
 		EFAEDEC729E337CE0012DE60 /* CantieriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC629E337CE0012DE60 /* CantieriView.swift */; };
 		EFAEDECA29E440610012DE60 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC929E440610012DE60 /* LogInController.swift */; };
+		EFAEDECC29E444BA0012DE60 /* CantieriController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDECB29E444BA0012DE60 /* CantieriController.swift */; };
 		EFFDFE1B29E05E2F00FEAAD6 /* Cantieri.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDFE1A29E05E2F00FEAAD6 /* Cantieri.swift */; };
 		EFFDFE2129E06CC000FEAAD6 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDFE2029E06CC000FEAAD6 /* APIRequest.swift */; };
 		EFFDFE2329E0769F00FEAAD6 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFDFE2229E0769F00FEAAD6 /* NetworkRequest.swift */; };
@@ -23,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF43C4C729E470C1008CC94E /* OperaiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperaiView.swift; sourceTree = "<group>"; };
 		EF725AA829E05ADF00574EC6 /* ReportCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReportCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF725AAB29E05ADF00574EC6 /* ReportCheckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCheckApp.swift; sourceTree = "<group>"; };
 		EF725AAD29E05ADF00574EC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		EFAEDEC429E31FB50012DE60 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		EFAEDEC629E337CE0012DE60 /* CantieriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CantieriView.swift; sourceTree = "<group>"; };
 		EFAEDEC929E440610012DE60 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		EFAEDECB29E444BA0012DE60 /* CantieriController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CantieriController.swift; sourceTree = "<group>"; };
 		EFFDFE1A29E05E2F00FEAAD6 /* Cantieri.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cantieri.swift; sourceTree = "<group>"; };
 		EFFDFE2029E06CC000FEAAD6 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		EFFDFE2229E0769F00FEAAD6 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 		EF725AAA29E05ADF00574EC6 /* ReportCheck */ = {
 			isa = PBXGroup;
 			children = (
+				EFAEDECD29E448680012DE60 /* SupportFiles */,
 				EFAEDEC829E440500012DE60 /* Controllers */,
 				EFFDFE3429E0AF9200FEAAD6 /* Views */,
 				EFFDFE1929E05E1900FEAAD6 /* Models */,
@@ -77,7 +82,6 @@
 				EF725AAD29E05ADF00574EC6 /* ContentView.swift */,
 				EF725AAF29E05AE000574EC6 /* Assets.xcassets */,
 				EF725AB129E05AE000574EC6 /* Preview Content */,
-				EFFDFE3229E0AEF100FEAAD6 /* Constants.swift */,
 			);
 			path = ReportCheck;
 			sourceTree = "<group>";
@@ -94,8 +98,17 @@
 			isa = PBXGroup;
 			children = (
 				EFAEDEC929E440610012DE60 /* LogInController.swift */,
+				EFAEDECB29E444BA0012DE60 /* CantieriController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EFAEDECD29E448680012DE60 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EFFDFE3229E0AEF100FEAAD6 /* Constants.swift */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 		EFFDFE1629E05D1400FEAAD6 /* Networking */ = {
@@ -122,6 +135,7 @@
 			children = (
 				EFFDFE3529E0AFA200FEAAD6 /* LogInView.swift */,
 				EFAEDEC629E337CE0012DE60 /* CantieriView.swift */,
+				EF43C4C729E470C1008CC94E /* OperaiView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF43C4C829E470C1008CC94E /* OperaiView.swift in Sources */,
 				EFFDFE1B29E05E2F00FEAAD6 /* Cantieri.swift in Sources */,
 				EF725AAE29E05ADF00574EC6 /* ContentView.swift in Sources */,
 				EFFDFE2129E06CC000FEAAD6 /* APIRequest.swift in Sources */,
@@ -206,6 +221,7 @@
 				EFFDFE3129E0AC7200FEAAD6 /* Users.swift in Sources */,
 				EFFDFE3629E0AFA200FEAAD6 /* LogInView.swift in Sources */,
 				EFAEDECA29E440610012DE60 /* LogInController.swift in Sources */,
+				EFAEDECC29E444BA0012DE60 /* CantieriController.swift in Sources */,
 				EFFDFE2329E0769F00FEAAD6 /* NetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

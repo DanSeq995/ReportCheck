@@ -33,10 +33,9 @@ extension LogInView{
                 
                 for user in users {
                     if username == user.username && password == user.password {
-                        print("OOOO")
                         viewState = .cantieri
                     } else {
-                        
+                        alertWrongCredentials = true
                     }
                 }
                 return

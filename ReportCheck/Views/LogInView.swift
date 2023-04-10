@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct LogInView: View {
+    //Variabili di navigazione
     @Binding var viewState: ViewState
-    @StateObject var networkRequest = NetworkRequest()
+    
+    //Variabili per il logIn
     @State var username = ""
     @State var password = ""
+    
+    //Variabili per alert
+    @State var alertWrongCredentials = false
     
     var body: some View {
         VStack{
@@ -28,7 +33,7 @@ struct LogInView: View {
             Text("Inserisci le credenziali")
                 .font(Font.system(size: 25))
                 .fontWeight(.regular)
-               
+            
             //Username form
             HStack {
                 Image(systemName: "person")
@@ -63,17 +68,22 @@ struct LogInView: View {
             } label: {
                 Text("Log In")
                     .frame(minWidth: 0, maxWidth: .infinity)
-                                .font(.system(size: 18))
-                                .padding()
-                                .foregroundColor(.white)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color.white, lineWidth: 2)
-                            )
-                        }
-                        .background(Color.accentColor)
-                        .cornerRadius(25)
-                        .padding(.horizontal)
+                    .font(.system(size: 18))
+                    .padding()
+                    .foregroundColor(.white)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color.white, lineWidth: 2)
+                    )
+            }
+            .background(Color.accentColor)
+            .cornerRadius(25)
+            .padding(.horizontal)
+            .alert("Credenziali sbagliate", isPresented: $alertWrongCredentials) {
+                Button("OK", role: .cancel) {
+                    alertWrongCredentials = false
+                }
+            }
             Spacer()
             Spacer()
         }
