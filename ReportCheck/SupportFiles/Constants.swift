@@ -18,6 +18,7 @@ enum ViewState {
 }
 
 //Variabili da mandare a database
+public var postUser: [Users] = [Users]()
 public var postDate: String!
 public var postCantiere: String!
 public var postOperai: [Operai]!

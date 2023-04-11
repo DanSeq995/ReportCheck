@@ -33,6 +33,9 @@ extension LogInView{
                 
                 for user in users {
                     if username == user.username && password == user.password {
+                        let user = Users(id: user.id, username: user.username, password: user.password, nome: user.nome, cognome: user.cognome, cNomeCompleto: user.cNomeCompleto)
+                        print(user)
+                        postUser.append(user)
                         viewState = .cantieri
                     } else {
                         alertWrongCredentials = true

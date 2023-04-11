@@ -56,7 +56,7 @@ struct NoteView: View {
                 Button(action: {
                     if nota != "" {
                         postNote = nota
-                        let report = Reports(data: postDate, cantiere: postCantiere, operai: postOperai, mezzi: postMezzi ?? [Mezzi](), lavorazioni: postLavorazioni ?? [Lavorazioni](), nota: postNote ?? "")
+                        let report = Reports(data: postDate, cantiere: postCantiere, operai: postOperai, mezzi: postMezzi ?? [Mezzi](), lavorazioni: postLavorazioni ?? [Lavorazioni](), nota: postNote ?? "", user: postUser)
                         print(report)
                     } else {
                         showingAlertNoNota = true
@@ -74,7 +74,7 @@ struct NoteView: View {
                         message: Text("Sicuro di voler procedere comunque?"),
                         primaryButton: .destructive(Text("Si")) {
                             postNote = nota
-                            let report = Reports(data: postDate, cantiere: postCantiere, operai: postOperai, mezzi: postMezzi ?? [Mezzi](), lavorazioni: postLavorazioni ?? [Lavorazioni](), nota: postNote ?? "")
+                            let report = Reports(data: postDate, cantiere: postCantiere, operai: postOperai, mezzi: postMezzi ?? [Mezzi](), lavorazioni: postLavorazioni ?? [Lavorazioni](), nota: postNote ?? "", user: postUser)
                             print(report)
                         },
                         secondaryButton: .cancel(Text("No")) {

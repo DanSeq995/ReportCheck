@@ -14,6 +14,7 @@ struct OperaiView: View {
     //Variabili operai
     @State var operai: [Operai] = [Operai]()
     @State var operaiSelezionati: [Operai] = [Operai]()
+    @State var capoSelezionato: [Users] = postUser
     
     //Variabili checkBox
     @State var selectedOperaio: Set<Int> = []
@@ -70,7 +71,31 @@ struct OperaiView: View {
                         .foregroundColor(Color.accentColor)
                     Spacer()
                 }
+                
                 List {
+                    ForEach(capoSelezionato.indices, id: \.self) { index in
+                        HStack() {
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 0)
+                                    .opacity(0.0)
+                                Text(capoSelezionato[index].cNomeCompleto)
+                            }
+                            Spacer()
+                            ZStack {
+                                Rectangle()
+                                    .size(width: 45, height: 35)
+                                    .stroke(style: .init(lineWidth: 2))
+                                    .padding(.trailing)
+                                
+                                TextField("0", text: $capoSelezionato[index].oreLavorate)
+                                    .padding(.leading)
+                                    .keyboardType(.numberPad)
+                            }
+                            .onTapGesture {
+                                endEditing()
+                            }
+                        }
+                    }
                     ForEach(operaiSelezionati.indices, id: \.self) { index in
                         HStack() {
                             ZStack {
@@ -87,7 +112,7 @@ struct OperaiView: View {
                                 
                                 TextField("0", text: $operaiSelezionati[index].oreLavorate)
                                     .padding(.leading)
-                                .keyboardType(.numberPad)
+                                    .keyboardType(.numberPad)
                             }
                             .onTapGesture {
                                 endEditing()
@@ -115,18 +140,26 @@ struct OperaiView: View {
                 Spacer()
                 
                 Button(action: {
-                    if operaiSelezionati != [] {
-                        for o in operaiSelezionati{
-                            if o.oreLavorate != "" {
-                                postOperai = operaiSelezionati
-                                print(operaiSelezionati)
-                                viewState = .mezzi
+                    for c in capoSelezionato{
+                        if c.oreLavorate != "" {
+                            postUser = capoSelezionato
+                            if operaiSelezionati != [] {
+                                for o in operaiSelezionati{
+                                    if o.oreLavorate != "" {
+                                        postOperai = operaiSelezionati
+                                        print(capoSelezionato)
+                                        print(operaiSelezionati)
+                                        viewState = .lavorazioni
+                                    } else {
+                                        showingAlertNoOre = true
+                                    }
+                                }
                             } else {
-                                showingAlertNoOre = true
+                                showingAlertNoOperai = true
                             }
+                        } else {
+                            showingAlertNoOre = true
                         }
-                    } else {
-                        showingAlertNoOperai = true
                     }
                 }, label: {
                     Image(systemName: "chevron.right.circle.fill")
