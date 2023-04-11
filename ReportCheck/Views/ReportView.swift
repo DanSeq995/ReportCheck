@@ -29,7 +29,6 @@ struct ReportView: View {
     private func createURL() -> URL{
         let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
         let id = UUID()
-     
         let renderedUrl = documentDirectory!.appending(path: "report_\(id).pdf")
      
         if let consumer = CGDataConsumer(url: renderedUrl as CFURL),
@@ -42,7 +41,7 @@ struct ReportView: View {
                 ]
      
                 pdfContext.beginPDFPage(options as CFDictionary)
-     
+                pdfContext.translateBy(x: 0, y: 200)
                 renderer(pdfContext)
                 pdfContext.endPDFPage()
                 pdfContext.closePDF()
