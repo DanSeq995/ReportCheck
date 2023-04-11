@@ -11,7 +11,7 @@ extension LogInView{
     func logIn(username:String, password:String) {
         let finalUrl = APIRequest().url.appendingPathComponent("/Users")
         var request = URLRequest(url: finalUrl)
-        APIRequest().addHeaderToQuery(request: &request)
+        APIRequest().addHeaderToQuery(request: &request, method: "GET")
         
         let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
             

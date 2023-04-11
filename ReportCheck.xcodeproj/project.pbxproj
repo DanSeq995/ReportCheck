@@ -23,6 +23,8 @@
 		EF9E1A7029E4C36700C597B9 /* Lavorazioni.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E1A6F29E4C36700C597B9 /* Lavorazioni.swift */; };
 		EF9E1A7229E4CA2C00C597B9 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E1A7129E4CA2C00C597B9 /* NoteView.swift */; };
 		EF9E1A7429E4D41000C597B9 /* Reports.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E1A7329E4D41000C597B9 /* Reports.swift */; };
+		EF9E1A7629E56FC200C597B9 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E1A7529E56FC200C597B9 /* ReportView.swift */; };
+		EF9E1A7829E56FD000C597B9 /* ReportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9E1A7729E56FD000C597B9 /* ReportController.swift */; };
 		EFAEDEC529E31FB50012DE60 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC429E31FB50012DE60 /* Logo.swift */; };
 		EFAEDEC729E337CE0012DE60 /* CantieriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC629E337CE0012DE60 /* CantieriView.swift */; };
 		EFAEDECA29E440610012DE60 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAEDEC929E440610012DE60 /* LogInController.swift */; };
@@ -53,6 +55,8 @@
 		EF9E1A6F29E4C36700C597B9 /* Lavorazioni.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lavorazioni.swift; sourceTree = "<group>"; };
 		EF9E1A7129E4CA2C00C597B9 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		EF9E1A7329E4D41000C597B9 /* Reports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reports.swift; sourceTree = "<group>"; };
+		EF9E1A7529E56FC200C597B9 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		EF9E1A7729E56FD000C597B9 /* ReportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportController.swift; sourceTree = "<group>"; };
 		EFAEDEC429E31FB50012DE60 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		EFAEDEC629E337CE0012DE60 /* CantieriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CantieriView.swift; sourceTree = "<group>"; };
 		EFAEDEC929E440610012DE60 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 				EF43C4C929E48590008CC94E /* OperaiController.swift */,
 				EF43C4D529E4BC1E008CC94E /* Mezzi Controller.swift */,
 				EF9E1A6D29E4C35C00C597B9 /* LavorazioniController.swift */,
+				EF9E1A7729E56FD000C597B9 /* ReportController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				EF43C4D129E4BA0F008CC94E /* MezziView.swift */,
 				EF9E1A6B29E4BFDC00C597B9 /* LavorazioniView.swift */,
 				EF9E1A7129E4CA2C00C597B9 /* NoteView.swift */,
+				EF9E1A7529E56FC200C597B9 /* ReportView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,10 +267,12 @@
 				EFFDFE3629E0AFA200FEAAD6 /* LogInView.swift in Sources */,
 				EF9E1A7229E4CA2C00C597B9 /* NoteView.swift in Sources */,
 				EF9E1A7029E4C36700C597B9 /* Lavorazioni.swift in Sources */,
+				EF9E1A7629E56FC200C597B9 /* ReportView.swift in Sources */,
 				EF43C4D029E4A28A008CC94E /* MultiSelectionCheckBoxView.swift in Sources */,
 				EFAEDECA29E440610012DE60 /* LogInController.swift in Sources */,
 				EF43C4D629E4BC1E008CC94E /* Mezzi Controller.swift in Sources */,
 				EFAEDECC29E444BA0012DE60 /* CantieriController.swift in Sources */,
+				EF9E1A7829E56FD000C597B9 /* ReportController.swift in Sources */,
 				EFFDFE2329E0769F00FEAAD6 /* NetworkRequest.swift in Sources */,
 				EF9E1A7429E4D41000C597B9 /* Reports.swift in Sources */,
 			);

@@ -34,6 +34,10 @@ struct ContentView: View {
         case .note:
             NoteView(viewState: $viewState)
                 .preferredColorScheme(.light)
+            
+        case .report:
+            ReportView(viewState: $viewState)
+                .preferredColorScheme(.light)
         }
     }
 }

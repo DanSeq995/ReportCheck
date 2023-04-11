@@ -14,11 +14,11 @@ class APIRequest{
     let password = "admin"
     var session: URLSession = .shared
     
-    func addHeaderToQuery(request: inout URLRequest){
+    func addHeaderToQuery(request: inout URLRequest, method: String){
         let loginString = String(format: "%@:%@", username, password)
         let loginData = loginString.data(using: String.Encoding.utf8)!
         let base64LoginString = loginData.base64EncodedString()
-        request.httpMethod = "GET"
+        request.httpMethod = method
         request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
     }
 }

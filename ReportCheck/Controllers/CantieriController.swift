@@ -11,7 +11,7 @@ extension CantieriView{
     func fetchCantieri() {
         let finalUrl = APIRequest().url.appendingPathComponent("/Cantieri")
         var request = URLRequest(url: finalUrl)
-        APIRequest().addHeaderToQuery(request: &request)
+        APIRequest().addHeaderToQuery(request: &request, method: "GET")
         
         let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
             

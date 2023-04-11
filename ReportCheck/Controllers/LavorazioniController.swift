@@ -13,7 +13,7 @@ extension LavorazioniView{
         let finalUrl = APIRequest().url.appendingPathComponent("/Lavorazioni")
         print(finalUrl)
         var request = URLRequest(url: finalUrl)
-        APIRequest().addHeaderToQuery(request: &request)
+        APIRequest().addHeaderToQuery(request: &request, method: "GET")
         
         let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
             

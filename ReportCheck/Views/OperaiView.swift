@@ -149,7 +149,7 @@ struct OperaiView: View {
                                         postOperai = operaiSelezionati
                                         print(capoSelezionato)
                                         print(operaiSelezionati)
-                                        viewState = .lavorazioni
+                                        viewState = .mezzi
                                     } else {
                                         showingAlertNoOre = true
                                     }

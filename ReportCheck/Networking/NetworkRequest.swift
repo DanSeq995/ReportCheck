@@ -14,7 +14,7 @@ class NetworkRequest: ObservableObject {
     func fetchCantieri() async throws{
         let finalUrl = APIRequest().url.appendingPathComponent("/Cantieri")
         var request = URLRequest(url: finalUrl)
-        APIRequest().addHeaderToQuery(request: &request)
+        APIRequest().addHeaderToQuery(request: &request, method: "GET")
         
         let task = URLSession.shared.dataTask(with: request) {[weak self](data, response, error) in
             
